@@ -1,0 +1,130 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #170da0;
+    margin: 0;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* CENTRALIZAÇÃO GLOBAL DE IMAGENS */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8%;
+}
+
+/* CENTRALIZAÇÃO OPCIONAL (CASO USE DIVS) */
+.imagem,
+.imagem-centralizada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img,
+.imagem-centralizada img {
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+/* LISTAS, LINKS, BOTÕES, TIPOGRAFIA */
+ul {
+    line-height: 2;
+    margin: 0;
+    padding-left: 20px;
+}
+
+ul.destaque-lista {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #170da0;
+    font-weight: 700;
+}
+
+button {
+    background: #170da0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0e0870;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #170da0;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+
+.principal {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.principal ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.principal a {
+    color: navy;
+    font-size: 1.4em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.principal a:hover {
+    color: darkblue;
+}
+
+/* Classe que força alinhamento à esquerda sem afetar imagens */
+.alinhado {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left !important;
+    list-style: none !important;
+}
+
+.links-uteis ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.links-uteis li {
+    margin: 1.5rem 0;
+}
+
+.links-uteis a {
+    font-weight: 600;
+}
