@@ -1,0 +1,242 @@
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #170da0;
+    margin: 0;
+}
+
+
+/* ================= CONTAINER PRINCIPAL ================= */
+.container {
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+/* ================= TEXTO ================= */
+p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+
+/* ================= IMAGENS (PADRÃO) ================= */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= IMAGENS EM GRID ================= */
+.grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* ================= IMAGENS ESPECÍFICAS (50%) ================= */
+.img-reduzida {
+    width: 70%;
+}
+
+/* ================= CENTRALIZAÇÃO OPCIONAL ================= */
+.imagem,
+.imagem-centralizada {
+    display: flex;
+    justify-content: center;
+}
+
+/* ================= TÍTULOS ================= */
+h1, h2, h3, h4 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #170da0;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+
+/* ================= MENU ================= */
+.principal {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.principal ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+}
+
+.principal a {
+    color: navy;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ================= GRID ================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.grid a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================= CARD ================= */
+.card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* imagem do card */
+.card img {
+    margin-bottom: 16px;
+}
+
+/* texto do card */
+.card p {
+    text-align: justify;
+}
+
+/* ================= QUADRO LEGAL ================= */
+.lei {
+    background: #ffffff;
+    border-left: 4px solid #170da0;
+    padding: 12px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+/* ================= BOTÕES ================= */
+.btn,
+button {
+    background: #170da0;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover,
+button:hover {
+    background-color: #0e0870;
+}
+
+/* ================= CONTATO ================= */
+.contato {
+    text-align: center;
+    margin: 80px 0;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .img-reduzida {
+        width: 80%;
+    }
+}
+.texto-imagem {
+    width: 70%;
+    margin: 20px auto 40px auto;
+    text-align: justify;
+    display: block;
+}
+/* ================= BLOCO TEXTO ABAIXO DE IMAGEM ================= */
+/* ================= CORREÇÃO DE CONFLITO CONTEUDO / TEXTO ================= */
+.conteudo {
+    display: block;
+}
+
+.container,
+.conteudo .texto,
+.texto-imagem {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.grid a {
+    display: block;
+}
+
+.grid a img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* === RESTAURA BOTÃO WHATSAPP NO CONTATO === */
+.contato {
+    text-align: center;
+}
+
+.contato .btn {
+    display: inline-block;
+    color: #ffffff !important;
+    background-color: #170da0;
+    font-weight: bold;
+}
+.img-advogada {
+    width: 50%;        /* AQUI você controla o tamanho */
+    max-width: 400px;  /* limite elegante */
+}
+/* ================= PADRÃO TÍTULOS INTERNOS ================= */
+
+/* Títulos principais dentro das páginas */
+main h1 {
+    color: #170da0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px auto 30px auto;
+    line-height: 1.3;
+}
+
+/* Subtítulos (ex: Vantagens do Atendimento Digital) */
+main h2 {
+    color: #170da0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px auto 25px auto;
+    line-height: 1.3;
+}
+
+/* Títulos de seções internas */
+main h3 {
+    color: #170da0;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 40px 0 20px 0;
+    line-height: 1.4;
+}
+
+/* Títulos menores (missão, visão, valores etc.) */
+main h4 {
+    color: #170da0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 30px 0 15px 0;
+    line-height: 1.4;
+}
