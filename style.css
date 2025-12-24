@@ -11,18 +11,21 @@ body {
 }
 
 /* ================= CONTAINER PADRÃO (TEXTOS) ================= */
-.container {
+.container,
+.texto-imagem,
+.conteudo,
+.cards-area {
     width: 70%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 /* ================= TEXTO ================= */
 p {
     line-height: 1.6;
     margin-bottom: 16px;
     text-align: justify;
+    color: #170da0; /* garante cor uniforme nos cards e textos */
 }
 
 /* ================= IMAGENS GERAIS ================= */
@@ -36,7 +39,7 @@ img {
 /* ================= MENU ================= */
 .principal {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* centraliza menu horizontalmente */
     margin: 20px auto;
 }
 
@@ -45,13 +48,18 @@ img {
     display: flex;
     gap: 50px;
     padding: 0;
+    justify-content: center;
 }
 
 .principal a {
-    color: navy;
+    color: #170da0; /* mesma cor dos links dos cards */
     font-size: 1.4em;
     font-weight: bold;
     text-decoration: none;
+}
+
+.principal a:hover {
+    text-decoration: underline;
 }
 
 /* ================= TÍTULOS ================= */
@@ -68,80 +76,65 @@ h3 { font-size: 1.4rem; }
 h4 { font-size: 1.2rem; }
 
 /* ================= ÁREA DE CARDS ================= */
-#areas {
-    width: 100%;
-}
-
-/* ================= GRID DOS CARDS – LAYOUT CORRETO ================= */
-
-#areas {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-#areas .grid {
+.cards-area {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 cards lado a lado */
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px;
+    justify-content: space-between; /* distribui cards uniformemente */
+    margin: 40px auto;
     width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-#areas .card {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
 }
 
-
-/* CARD – ESTRUTURA FINAL */
-#areas .card {
+/* ================= CARD ================= */
+.cards-area .card {
     background: #f9f9f9;
     border-radius: 10px;
-    padding: 40px;
-    font-size: 0.95rem;
-
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* garante que base legal fique no final */
+    color: #170da0;
+    box-sizing: border-box;
 }
 
-/* IMAGEM DO CARD */
-#areas .card img {
+/* ================= IMAGEM DO CARD ================= */
+.cards-area .card img {
     width: 100%;
     height: auto;
     margin-bottom: 12px;
     border-radius: 8px;
 }
 
-/* TÍTULO DO CARD – ALINHADO */
-#areas .card h3 {
-    min-height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* ================= TÍTULO DO CARD ================= */
+.cards-area .card h3 {
     text-align: center;
-    margin: 0 0 16px 0;
+    margin-bottom: 12px;
 }
 
-/* CONTEÚDO DO CARD */
-#areas .card .card-conteudo p {
+/* somente o título clicável */
+.cards-area .card h3 a {
+    text-decoration: none;
+    color: #170da0;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.cards-area .card h3 a:hover {
+    text-decoration: underline;
+}
+
+/* ================= CONTEÚDO DO CARD ================= */
+.cards-area .card .card-conteudo p {
     text-align: justify;
-    line-height: 1.6;
-    margin-bottom: 14px;
+    line-height: 1.25;
+    margin: 0 0 8px 0;
+    font-size: 0.92rem;
 }
 
-/* BASE LEGAL / FONTE NO FUNDO */
-#areas .card .lei,
-#areas .card .protecao {
-    margin-top: auto;
-}
-
-/* QUADRO LEGAL */
-.lei {
+/* ================= BASE LEGAL ================= */
+.cards-area .card .lei,
+.cards-area .card .protecao {
+    margin-top: auto; /* garante que fique no final do card */
     background: #ffffff;
     border-left: 4px solid #170da0;
     padding: 12px;
@@ -166,292 +159,24 @@ button:hover {
     background-color: #0e0870;
 }
 
-/* ================= CONTATO ================= */
-.contato {
-    text-align: center;
-    margin: 80px 0;
-}
-
-/* ================= IMAGENS ESPECÍFICAS ================= */
-.img-abertura {
-    width: 100%;
-    max-width: 800px;
-    margin: 40px auto;
-}
-
-.img-advogada {
-    width: 50%;
-    max-width: 450px;
-    margin: 40px auto;
-}
-
-.img-trabalho-hibrido {
-    width: 55%;
-    max-width: 600px;
-    margin: 40px auto;
-}
-
-.img-atendimento {
-    width: 65%;
-    max-width: 650px;
-    margin: 40px auto;
-}
-
 /* ================= RESPONSIVO ================= */
 @media (max-width: 1200px) {
-    #areas .grid {
+    .cards-area {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 900px) {
-    #areas .grid {
+    .cards-area {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    #areas .grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ================= AJUSTE FINAL – TÍTULOS DOS CARDS ================= */
-
-/* força todos os títulos na mesma altura */
-#areas .card h3 {
-    min-height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 0 16px 0;
-}
-
-/* somente o título é clicável */
-#areas .card h3 a {
-    text-decoration: none;
-    color: #170da0;
-    font-weight: 700;
-    display: inline-block;
-}
-
-/* underline apenas no hover do título */
-#areas .card h3 a:hover {
-    text-decoration: underline;
-}
-
-/* ================= CONTAINER FULL WIDTH – CARDS ================= */
-#areas {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* grid ocupa toda a largura */
-#areas .grid {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-/* conteúdo interno do card */
-#areas .card {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* remove sublinhado e cor de link de TODO o card */
-#areas .grid > a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* garante que textos internos não herdem estilo de link */
-#areas .card p,
-#areas .card div {
-    text-decoration: none;
-}
-
-
-/* ================= LARGURA DO TEXTO (70%) ================= */
-
-.texto-imagem,
-.conteudo .texto,
-.intro,
-main > section:not(#areas) {
-    width: 70%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* ================= ÁREA DOS CARDS (100%) ================= */
-
-#areas {
-    width: 100%;
-}
-
-#areas .grid {
-    width: 95%;
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-/* ================= COMPACTAÇÃO DO TEXTO DOS CARDS ================= */
-
-/* reduz espaçamento entre linhas do texto */
-#areas .card p {
-    line-height: 1.35;      /* antes estava ~1.6 */
-    margin-bottom: 10px;    /* reduz espaço entre parágrafos */
-    font-size: 0.92rem;     /* leve redução, sem perder legibilidade */
-}
-
-/* garante que o bloco de texto não empurre o card */
-#areas .card .card-conteudo {
-    padding: 0;
-}
-/* ================= LARGURA GERAL DO TEXTO ================= */
-.texto-imagem,
-.conteudo,
-.container {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* ================= CENTRALIZAÇÃO DOS CARDS ================= */
-#areas {
-    display: flex;
-    justify-content: center;
-}
-
-#areas .grid {
-    max-width: 100%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* ================= COMPACTAÇÃO REAL DO TEXTO DOS CARDS ================= */
-
-/* força a redução do espaçamento entre linhas */
-#areas .card p {
-    line-height: 1.25 !important;
-    margin: 0 0 8px 0 !important;
-    font-size: 0.92rem;
-}
-
-/* remove espaçamentos extras internos */
-#areas .card .card-conteudo {
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-/* garante que títulos NÃO sejam afetados */
-#areas .card h3 {
-    line-height: normal;
-    margin-bottom: 12px;
-}
-
-/* ===================================================
-   CONTAINER GERAL — 70% CENTRALIZADO
-=================================================== */
-.texto-imagem,
-.conteudo,
-.container,
-.cards-area {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* ===================================================
-   GRID DOS CARDS — DESKTOP
-=================================================== */
-.cards-area {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    justify-content: center;
-}
-
-/* ===================================================
-   CARD
-=================================================== */
-.cards-area .card {
-    display: flex;
-    flex-direction: column;
-}
-
-/* ===================================================
-   TEXTO DOS CARDS — COMPACTAÇÃO REAL
-=================================================== */
-.cards-area .card .card-conteudo p {
-    line-height: 1.2 !important;   /* reduz altura entre linhas */
-    margin-bottom: 6px !important;
-    margin-top: 0 !important;
-    font-size: 0.92rem;
-}
-
-/* remove espaço após o último parágrafo */
-.cards-area .card .card-conteudo p:last-child {
-    margin-bottom: 0 !important;
-}
-
-/* ===================================================
-   TÍTULOS — NÃO ALTERAR ALTURA
-=================================================== */
-.cards-area .card h3 {
-    margin-bottom: 12px;
-    line-height: normal;
-}
-
-/* ===================================================
-   MOBILE — RESPONSIVO REAL
-=================================================== */
-@media (max-width: 768px) {
-
-    /* texto ocupa quase toda a tela */
-    .texto-imagem,
-    .conteudo,
-    .container,
-    .cards-area {
-        max-width: 92%;
-    }
-
-    /* cards empilhados */
     .cards-area {
         grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    /* texto ainda mais compacto no mobile */
-    .cards-area .card .card-conteudo p {
-        line-height: 1.15 !important;
-        font-size: 0.9rem;
     }
 }
-.card-conteudo p {
-    text-align: justify;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-    position: static;
-}
-.card-conteudo {
-    position: static;
-}
-
-.card-conteudo p {
-    position: static;
-}
-.card img {
-    position: static;
-    z-index: 1;
-}
-
 
 
 
