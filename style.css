@@ -10,11 +10,13 @@ body {
     margin: 0;
 }
 
-/* ================= CONTAINER ================= */
+/* ================= CONTAINER PADRÃO (TEXTOS) ================= */
 .container {
     width: 70%;
+    max-width: 1200px;
     margin: 0 auto;
 }
+
 
 /* ================= TEXTO ================= */
 p {
@@ -70,16 +72,30 @@ h4 { font-size: 1.2rem; }
     width: 100%;
 }
 
-/* GRID DOS CARDS */
+/* ================= GRID DOS CARDS – LAYOUT CORRETO ================= */
+
+#areas {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 #areas .grid {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 20px;
-    width: 95%;
-    max-width: 1600px;
+    grid-template-columns: repeat(5, 1fr); /* 5 cards lado a lado */
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    align-items: stretch;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
+#areas .card {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
 
 /* CARD – ESTRUTURA FINAL */
 #areas .card {
@@ -182,15 +198,24 @@ button:hover {
 }
 
 /* ================= RESPONSIVO ================= */
-@media (max-width: 900px) {
-    .container {
-        width: 90%;
+@media (max-width: 1200px) {
+    #areas .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
+}
 
+@media (max-width: 900px) {
+    #areas .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
     #areas .grid {
         grid-template-columns: 1fr;
     }
 }
+
 /* ================= AJUSTE FINAL – TÍTULOS DOS CARDS ================= */
 
 /* força todos os títulos na mesma altura */
@@ -214,6 +239,27 @@ button:hover {
 /* underline apenas no hover do título */
 #areas .card h3 a:hover {
     text-decoration: underline;
+}
+
+/* ================= CONTAINER FULL WIDTH – CARDS ================= */
+#areas {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* grid ocupa toda a largura */
+#areas .grid {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+/* conteúdo interno do card */
+#areas .card {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
