@@ -177,12 +177,17 @@ button:hover {
     display: block;
 }
 
-.container,
 .conteudo .texto,
 .texto-imagem {
     width: 70%;
     margin: 0 auto;
 }
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
 
 .grid a {
     display: block;
@@ -249,34 +254,21 @@ main h4 {
 }
 /* ================= EXCEÇÃO DE LARGURA PARA ÁREA DE CARDS ================= */
 
-/* Wrapper dos cards ocupa quase a tela toda */
-#areas {
-    width: 100%;
-}
-
-/* Grid ignora o limite de 70% do container */
 #areas .grid {
-    width: 95%;
-    max-width: 1400px; /* controle elegante em telas grandes */
-    margin: 0 auto;
-}
-
-/* Cards ocupam o espaço corretamente */
-
-#areas .grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
     width: 95%;
     max-width: 1400px;
     margin: 0 auto;
+}
+
 }
 #areas .card {
     width: 100%;
     padding: 45px;
     font-size: 0.95rem;
 }
-
-
-
-
 
 
 
