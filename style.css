@@ -264,8 +264,8 @@ main h4 {
 
 /* Foto institucional – advogada */
 .img-advogada {
-    width: 60%;
-    max-width: 650px;
+    width: 50%;
+    max-width: 450px;
     margin: 40px auto;
 }
 
@@ -289,6 +289,7 @@ main h4 {
     max-width: 800px;
     margin: 40px auto;
 }
+
 
 
 
