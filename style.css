@@ -1,6 +1,8 @@
+/* ================= RESET ================= */
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: "Open Sans", Arial, sans-serif;
     background-color: #ffffff;
@@ -8,12 +10,10 @@ body {
     margin: 0;
 }
 
-
-/* ================= CONTAINER PRINCIPAL ================= */
+/* ================= CONTAINER ================= */
 .container {
     width: 70%;
     margin: 0 auto;
-    font-family: "Open Sans", Arial, sans-serif;
 }
 
 /* ================= TEXTO ================= */
@@ -23,35 +23,13 @@ p {
     text-align: justify;
 }
 
-
-/* ================= IMAGENS (PADRÃO) ================= */
+/* ================= IMAGENS GERAIS ================= */
 img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
-
-/* ================= IMAGENS EM GRID (APENAS CARDS) ================= */
-#areas .card img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* ================= TÍTULOS ================= */
-h1, h2, h3, h4 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #170da0;
-}
-
-h1 { font-size: 2.2rem; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.4rem; }
-h4 { font-size: 1.2rem; }
 
 /* ================= MENU ================= */
 .principal {
@@ -74,60 +52,79 @@ h4 { font-size: 1.2rem; }
     text-decoration: none;
 }
 
-/* ================= GRID ================= */
+/* ================= TÍTULOS ================= */
+h1, h2, h3, h4 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #170da0;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+
+/* ================= ÁREA DE CARDS ================= */
+#areas {
+    width: 100%;
+}
+
+/* GRID DOS CARDS */
 #areas .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 20px;
+    width: 95%;
+    max-width: 1600px;
+    margin: 0 auto;
     align-items: stretch;
 }
 
+/* CARD – ESTRUTURA FINAL */
 #areas .card {
-    height: 100%;
-}
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 0.95rem;
 
-.grid a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-/* ================= CARD ================= */
-/* estrutura do card */
-#areas .card {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     height: 100%;
 }
 
-/* imagem */
+/* IMAGEM DO CARD */
 #areas .card img {
-    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+    border-radius: 8px;
 }
 
-/* título — alinhamento uniforme */
+/* TÍTULO DO CARD – ALINHADO */
 #areas .card h3 {
     min-height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 0 15px 0;
+    margin: 0 0 16px 0;
 }
 
-/* conteúdo principal ocupa o meio */
-.card .card-conteudo {
-    align-self: start;
+/* CONTEÚDO DO CARD */
+#areas .card .card-conteudo p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 14px;
 }
 
-/* base legal / fonte sempre no fundo */
-.card .lei,
-.card .protecao {
-    align-self: end;
+/* BASE LEGAL / FONTE NO FUNDO */
+#areas .card .lei,
+#areas .card .protecao {
+    margin-top: auto;
 }
 
-
-/* ================= QUADRO LEGAL ================= */
+/* QUADRO LEGAL */
 .lei {
     background: #ffffff;
     border-left: 4px solid #170da0;
@@ -135,7 +132,6 @@ h4 { font-size: 1.2rem; }
     font-size: 0.9rem;
     text-align: left;
 }
-
 
 /* ================= BOTÕES ================= */
 .btn,
@@ -160,161 +156,42 @@ button:hover {
     margin: 80px 0;
 }
 
-/* ================= RESPONSIVO ================= */
-@media (max-width: 900px) {
-    #areas .grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-    .img-reduzida {
-        width: 80%;
-    }
-}
-
-.texto-imagem {
-    width: 70%;
-    margin: 20px auto 40px auto;
-    text-align: justify;
-    display: block;
-}
-/* ================= BLOCO TEXTO ABAIXO DE IMAGEM ================= */
-/* ================= CORREÇÃO DE CONFLITO CONTEUDO / TEXTO ================= */
-.conteudo {
-    display: block;
-}
-
-.conteudo .texto,
-.texto-imagem {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.container {
-    width: 100%;
-    margin: 0;
-}
-
-
-.grid a {
-    display: block;
-}
-
-.grid a img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-/* === RESTAURA BOTÃO WHATSAPP NO CONTATO === */
-.contato {
-    text-align: center;
-}
-
-.contato .btn {
-    display: inline-block;
-    color: #ffffff !important;
-    background-color: #170da0;
-    font-weight: bold;
-}
-
-/* ================= PADRÃO TÍTULOS INTERNOS ================= */
-
-/* Títulos principais dentro das páginas */
-main h1 {
-    color: #170da0;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 60px auto 30px auto;
-    line-height: 1.3;
-}
-
-/* Subtítulos (ex: Vantagens do Atendimento Digital) */
-main h2 {
-    color: #170da0;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 50px auto 25px auto;
-    line-height: 1.3;
-}
-
-/* Títulos de seções internas */
-main h3 {
-    color: #170da0;
-    font-size: 1.35rem;
-    font-weight: 700;
-    margin: 40px 0 20px 0;
-    line-height: 1.4;
-}
-
-/* Títulos menores (missão, visão, valores etc.) */
-main h4 {
-    color: #170da0;
-    font-size: 1.15rem;
-    font-weight: 700;
-    margin: 30px 0 15px 0;
-    line-height: 1.4;
-}
-/* ================= EXCEÇÃO DE LARGURA PARA ÁREA DE CARDS ================= */
-
-#areas .grid {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 20px;
-    width: 95%;
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-}
-#areas .card {
-    width: 100%;
-    padding: 60px;
-    font-size: 0.95rem;
-}
-
-/* ================= CONTROLE INDIVIDUAL DE IMAGENS DO SITE ================= */
-
-/* Imagem de abertura (home / topo) */
+/* ================= IMAGENS ESPECÍFICAS ================= */
 .img-abertura {
     width: 100%;
     max-width: 800px;
     margin: 40px auto;
 }
 
-/* Foto institucional – advogada */
 .img-advogada {
     width: 50%;
     max-width: 450px;
     margin: 40px auto;
 }
 
-/* Imagem – trabalho híbrido */
 .img-trabalho-hibrido {
     width: 55%;
     max-width: 600px;
     margin: 40px auto;
 }
 
-/* Imagem – atendimento digital */
 .img-atendimento {
     width: 65%;
     max-width: 650px;
     margin: 40px auto;
 }
 
-/* Imagem genérica institucional (se precisar no futuro) */
-.img-institucional {
-    width: 70%;
-    max-width: 800px;
-    margin: 40px auto;
+/* ================= RESPONSIVO ================= */
+@media (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
+
+    #areas .grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-#areas .lei {
-    margin-top: auto;
-}
 
 
 
