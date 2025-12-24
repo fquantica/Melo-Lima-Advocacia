@@ -77,11 +77,14 @@ h4 { font-size: 1.2rem; }
 /* ================= GRID ================= */
 #areas .grid {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    align-items: stretch;
 }
 
-
+#areas .card {
+    height: 100%;
+}
 
 .grid a {
     text-decoration: none;
@@ -289,6 +292,7 @@ main h4 {
     max-width: 800px;
     margin: 40px auto;
 }
+
 
 
 
