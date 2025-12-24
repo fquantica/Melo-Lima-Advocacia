@@ -116,6 +116,13 @@ h4 { font-size: 1.2rem; }
 .card .protecao {
     margin-top: auto;
 }
+#areas .card h3 {
+    min-height: 56px;          /* altura base do maior título */
+    display: flex;
+    align-items: center;       /* centraliza verticalmente dentro do espaço */
+    text-align: center;
+    margin-bottom: 15px;
+}
 
 /* ================= QUADRO LEGAL ================= */
 .lei {
@@ -305,6 +312,7 @@ main h4 {
 #areas .lei {
     margin-top: auto;
 }
+
 
 
 
