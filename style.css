@@ -97,13 +97,11 @@ h4 { font-size: 1.2rem; }
     background: #f9f9f9;
     border-radius: 10px;
     padding: 20px;
-}
-#areas .card {
+
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-
 /* imagem do card */
 .card img {
     margin-bottom: 10px;
@@ -112,6 +110,15 @@ h4 { font-size: 1.2rem; }
 /* texto do card */
 .card p {
     text-align: justify;
+    margin-bottom: 12px;
+}
+.card p {
+    margin-bottom: 12px;
+}
+.card .lei,
+.card .base-legal,
+.card .fonte {
+    margin-top: auto;
 }
 
 
@@ -304,6 +311,7 @@ main h4 {
 #areas .lei {
     margin-top: auto;
 }
+
 
 
 
