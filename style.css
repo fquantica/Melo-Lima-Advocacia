@@ -262,6 +262,18 @@ button:hover {
     box-sizing: border-box;
 }
 
+/* remove sublinhado e cor de link de TODO o card */
+#areas .grid > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* garante que textos internos não herdem estilo de link */
+#areas .card p,
+#areas .card div {
+    text-decoration: none;
+}
+
 
 
 
