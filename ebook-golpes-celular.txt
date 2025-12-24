@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍTULO DA PÁGINA | Melo Lima Advocacia</title>
+    <meta name="description" content="Descrição jurídica da página">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="principal">
+      <ul>
+        <li><a href="/Melo-Lima-Advocacia/">Início</a></li>
+        <li><a href="/Melo-Lima-Advocacia/#areas">Áreas de Atuação</a></li>
+        <li><a href="/Melo-Lima-Advocacia/#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+
+
+<main class="container">
+    
+    <h1>Golpes Digitais, Roubo de Celular e a Realidade Jurídica do Consumidor</h1>
+
+    <h2>Uma nova forma de violência patrimonial</h2>
+    <p>
+    O roubo de celulares deixou de ser apenas uma subtração física para se tornar uma porta de
+    acesso à vida financeira, digital e pessoal das vítimas.
+    </p>
+
+    <h2>O que a maioria das pessoas não sabe</h2>
+    <p>
+    Muitos consumidores desconhecem que bancos possuem dever legal de segurança e que
+    falhas sistêmicas podem gerar direito à restituição integral dos valores perdidos.
+    </p>
+
+    <h2>Jurisprudência, provas e estratégia jurídica</h2>
+    <p>
+    A compreensão das teses jurídicas, da produção de provas digitais e da jurisprudência atual
+    é determinante para o sucesso na defesa do consumidor.
+    </p>
+
+    <h2>Por que informação qualificada faz diferença</h2>
+    <p>
+    Conhecer os caminhos jurídicos corretos evita decisões precipitadas, perda de direitos e
+    frustração diante de negativas administrativas.
+    </p>
+
+    <h2>Conhecimento como instrumento de proteção</h2>
+    <p>
+    O aprofundamento técnico sobre golpes digitais permite ao consumidor agir com segurança,
+    consciência jurídica e estratégia adequada diante de situações complexas.
+    </p>
+
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="https://go.hotmart.com/N102935121N?dp=1"
+           class="btn"
+           target="_blank">
+           Acessar conteúdo completo
+        </a>
+      </div>
+
+</main>
+
+<section class="contato" id="contato">
+    <a href="https://wa.me/5511983961903" class="btn" target="_blank">
+        Acessar Contato Institucional
+    </a>
+</section>
+
+</body>
+</html>

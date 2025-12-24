@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍTULO DA PÁGINA | Melo Lima Advocacia</title>
+    <meta name="description" content="Descrição jurídica da página">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+    <nav class="principal">
+      <ul>
+        <li><a href="/Melo-Lima-Advocacia/">Início</a></li>
+        <li><a href="/Melo-Lima-Advocacia/#areas">Áreas de Atuação</a></li>
+        <li><a href="/Melo-Lima-Advocacia/#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+
+
+<main class="container">
+    <h1>Contrato de Locação Temporária e Segurança Jurídica</h1>
+
+    <h2>A locação temporária no Direito Civil</h2>
+    <p>
+    A locação por prazo determinado exige atenção às regras do Código Civil e da Lei do
+    Inquilinato, prevenindo conflitos entre locador e locatário.
+    </p>
+
+    <h2>Função social do contrato e boa-fé objetiva</h2>
+    <p>
+    Os artigos 421 e 422 do Código Civil impõem equilíbrio contratual, transparência e cooperação
+    entre as partes.
+    </p>
+
+    <h2>Lei do Inquilinato e limites da locação temporária</h2>
+    <p>
+    A Lei nº 8.245/1991 disciplina direitos e deveres, evitando abusos contratuais e garantindo
+    segurança jurídica.
+    </p>
+
+    <h2>Jurisprudência sobre locações por prazo determinado</h2>
+    <p>
+    Os tribunais têm validado contratos temporários claros e equilibrados, afastando cláusulas
+    abusivas.
+    </p>
+
+    <h2>Atuação jurídica preventiva</h2>
+    <p>
+    A assessoria jurídica previne litígios por meio da elaboração de contratos sólidos e
+    adequados à legislação vigente.
+    </p>
+
+</main>
+
+<section class="contato" id="contato">
+    <a href="https://wa.me/5511983961903" class="btn" target="_blank">
+        Acessar Contato Institucional
+    </a>
+</section>
+
+</body>
+</html>
+
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍTULO DA PÁGINA | Melo Lima Advocacia</title>
+    <meta name="description" content="Descrição jurídica da página">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="principal">
+      <ul>
+        <li><a href="/Melo-Lima-Advocacia/">Início</a></li>
+        <li><a href="/Melo-Lima-Advocacia/#areas">Áreas de Atuação</a></li>
+        <li><a href="/Melo-Lima-Advocacia/#contato">Contato</a></li>
+      </ul>
+    </nav>

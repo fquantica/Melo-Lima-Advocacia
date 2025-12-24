@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍTULO DA PÁGINA | Melo Lima Advocacia</title>
+    <meta name="description" content="Descrição jurídica da página">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <nav class="principal">
+  <ul>
+    <li><a href="/Melo-Lima-Advocacia/">Início</a></li>
+    <li><a href="/Melo-Lima-Advocacia/#areas">Áreas de Atuação</a></li>
+    <li><a href="/Melo-Lima-Advocacia/#contato">Contato</a></li>
+  </ul>
+</nav>
+
+
+
+<main class="container">
+    
+    <h1>Logística Reversa, Reciclagem de Plástico e Responsabilidade Ambiental</h1>
+
+    <h2>A logística reversa no ordenamento jurídico brasileiro</h2>
+    <p>
+    A logística reversa constitui instrumento essencial da Política Nacional de Resíduos Sólidos,
+    instituída pela Lei nº 12.305/2010, impondo a fabricantes, importadores, distribuidores e
+    comerciantes a responsabilidade compartilhada pelo ciclo de vida dos produtos.
+    </p>
+
+    <h2>O desafio da reciclagem do plástico no Brasil</h2>
+    <p>
+    O plástico representa um dos maiores desafios ambientais contemporâneos. A diversidade de
+    polímeros, a contaminação dos resíduos e a informalidade da cadeia de coleta dificultam a
+    reciclagem eficiente, exigindo soluções jurídicas, contratuais e operacionais.
+    </p>
+
+    <h2>Fundamento constitucional da proteção ambiental</h2>
+    <p>
+    O artigo 225 da Constituição Federal consagra o direito ao meio ambiente ecologicamente
+    equilibrado, impondo deveres tanto ao Poder Público quanto à iniciativa privada, consolidando
+    o princípio da prevenção ambiental.
+    </p>
+
+    <h2>Responsabilidade objetiva e jurisprudência ambiental</h2>
+    <p>
+    A jurisprudência do Superior Tribunal de Justiça é pacífica ao reconhecer a responsabilidade
+    objetiva por danos ambientais, adotando a teoria do risco integral, afastando excludentes de
+    responsabilidade.
+    </p>
+
+    <h2>Atuação jurídica preventiva e contenciosa</h2>
+    <p>
+    A atuação jurídica envolve a estruturação de sistemas de logística reversa, contratos com
+    cooperativas, compliance ambiental e defesa administrativa e judicial, prevenindo passivos
+    ambientais e sanções.
+    </p>
+
+    <!-- Conteúdo jurídico detalhado -->
+
+</main>
+
+<section class="contato" id="contato">
+    <a href="https://wa.me/5511983961903" class="btn" target="_blank">
+        Acessar Contato Institucional
+    </a>
+</section>
+
+</body>
+</html>
