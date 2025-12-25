@@ -326,11 +326,20 @@ button {
     margin: 0;
 }
 .cards-area {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 24px;
-  max-width: 100%;
+    margin: 0 auto;
 }
+.card {
+    min-width: 0;
+    height: 100%;
+}
+
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(var(--cards-por-linha), minmax(0, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
 
 .card {
   background: #fff;
@@ -393,11 +402,52 @@ button {
   border-radius: 6px;
   margin-bottom: 12px;
 }
-.card {
-  width: var(--largura-card);
-}
---largura-card: 50px;
 
+/* ================= CENTRALIZAÇÃO DOS CARDS ================= */
+
+/* Centraliza a seção inteira dos cards */
+#areas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Wrapper que controla a largura geral dos cards */
+.cards-wrapper {
+    width: 90%;              /* AJUSTE AQUI a largura total ocupada */
+    max-width: 1600px;       /* impede ficar largo demais em telas grandes */
+    margin: 0 auto;
+}
+
+/* Grid dos cards centralizado */
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    justify-content: center;
+}
+
+/* Garante que cada card fique centralizado internamente */
+.card {
+    margin: 0 auto;
+}
+/* ================= CONTROLE DO ESPAÇO USADO PELOS CARDS NA PAGINA ================= */
+
+.cards-wrapper {
+    width: 85%;
+    /* ou */
+    width: 95%;
+}
+
+:root {
+    --cards-por-linha: 5; /* ALTERE AQUI: 4, 5 ou 6 */
+}
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(var(--cards-por-linha), minmax(0, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
 
 
 
