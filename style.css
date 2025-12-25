@@ -1,6 +1,6 @@
 
 :root {
-  --largura-card: 260px; /* ALTERE AQUI */
+  --largura-card: 100px; /* ALTERE AQUI */
 }
 
 /* ================= RESET ================= */
@@ -397,6 +397,7 @@ button {
   width: var(--largura-card);
 }
 --largura-card: 50px;
+
 
 
 
