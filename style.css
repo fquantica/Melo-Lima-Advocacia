@@ -82,12 +82,16 @@ h1, h2, h3, h4 {
     padding: 40px 0;
 }
 
-/* ================= TÍTULO ÁREAS ================= */
+
+/* === TÍTULO ÁREAS DE ATUAÇÃO === */
 .titulo-areas {
     text-align: center;
-    margin-bottom: 48px;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 56px; /* espaço real entre título e cards */
+    color: #170da0;
 }
+
 
 /* ================= GRID DE CARDS ================= */
 .cards-area {
@@ -447,6 +451,7 @@ button {
     gap: 20px;
     justify-content: center;
 }
+
 
 
 
