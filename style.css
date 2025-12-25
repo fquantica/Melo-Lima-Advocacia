@@ -101,7 +101,7 @@ h4 { font-size: 1.2rem; }
 /* ================= IMAGEM DO CARD ================= */
 .cards-area .card img {
     width: 100%;
-    max-height: 80px; /* limita altura da imagem */
+    max-height: 100px; /* limita altura da imagem */
     object-fit: cover;  /* mantém proporção sem distorcer */
     margin-bottom: 12px;
     border-radius: 8px;
@@ -192,6 +192,7 @@ button:hover {
         width: 90%;
     }
 }
+
 
 
 
