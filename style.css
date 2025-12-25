@@ -23,6 +23,7 @@ body {
     width: 70%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 0;   /* FAZ O TEXTO SUBIR */
 }
 
 /* ================= TEXTO ================= */
@@ -450,6 +451,7 @@ button {
     gap: 20px;
     justify-content: center;
 }
+
 
 
 
