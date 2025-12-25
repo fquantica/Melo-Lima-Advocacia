@@ -188,6 +188,267 @@ button {
     }
 }
 
+/* =====================================================
+   AJUSTE DEFINITIVO – ÁREAS DE ATUAÇÃO
+===================================================== */
+
+/* Seção ocupa largura real da página */
+#areas {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+}
+
+/* Grid real de 5 colunas */
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 24px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Garante que nenhum card quebre linha */
+.cards-area > * {
+    min-width: 0;
+}
+
+/* ================= CARD ================= */
+.card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 14px 18px;
+    height: 100%;
+}
+
+/* Link do card não interfere no layout */
+.card-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================= IMAGEM ================= */
+.card img {
+    margin: 0 0 8px 0;
+}
+
+/* ================= TÍTULO ================= */
+.card h3 {
+    margin: 4px 0 6px 0;
+    line-height: 1.25;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+/* ================= TEXTO ================= */
+.card p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.45;
+    text-align: center;
+}
+
+/* ================= BASE LEGAL ================= */
+.cards-area .lei,
+.cards-area .protecao {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+/* =====================================================
+   BOTÃO CONTATO – CENTRALIZAÇÃO REAL
+===================================================== */
+
+.contato {
+    width: 100%;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.contato .btn {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* ================= CONTROLE INDIVIDUAL DAS IMAGENS DO SITE ================= */
+/* (NÃO AFETA IMAGENS DOS CARDS) */
+
+/* Imagem de abertura */
+.img-abertura {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Imagem da advogada (acordos judiciais) */
+.img-advogada {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Imagem trabalho híbrido */
+.img-trabalho-hibrido {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Imagem atendimento digital */
+.img-atendimento {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ================= IMAGENS DOS CARDS ================= */
+.cards-area img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.cards-area {
+    margin: 0 auto;
+}
+
+.card {
+    min-width: 0;
+    height: 100%;
+}
+
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(var(--cards-por-linha), minmax(0, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-titulo {
+    margin: 12px 0 8px;
+    text-align: center;
+}
+
+/* ================= TÍTULOS DOS CARDS ================= */
+.cards-area .card h3,
+.cards-area .card h3 a {
+    color: #170da0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hover opcional, sem mudar layout */
+.cards-area .card h3 a:hover {
+    text-decoration: underline;
+}
+
+.card-titulo a:hover {
+    text-decoration: underline;
+}
+
+.card-conteudo {
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.lei {
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* CORREÇÃO GARANTIDA DAS IMAGENS DOS CARDS */
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+/* ================= CENTRALIZAÇÃO DOS CARDS ================= */
+
+/* Centraliza a seção inteira dos cards */
+#areas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Wrapper que controla a largura geral dos cards */
+.cards-wrapper {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Grid dos cards centralizado */
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    justify-content: center;
+}
+
+/* Garante que cada card fique centralizado internamente */
+.card {
+    margin: 0 auto;
+}
+
+/* ================= CONTROLE DO ESPAÇO USADO PELOS CARDS NA PÁGINA ================= */
+
+.cards-wrapper {
+    width: 85%;
+    width: 95%;
+}
+
+:root {
+    --cards-por-linha: 5;
+}
+
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(var(--cards-por-linha), minmax(0, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
 
 
 
