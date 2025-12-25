@@ -80,8 +80,9 @@ h4 { font-size: 1.2rem; }
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 cards lado a lado */
     gap: 24px;
-    width: 70%; /* ocupa 70% da tela */
-    margin: 40px auto; /* centraliza */
+    width: 70%;           /* ocupa 70% da tela */
+    margin: 0 auto 40px;  /* centraliza horizontalmente e dá margem inferior */
+    justify-items: stretch; /* garante que todos os cards ocupem a mesma largura */
 }
 
 /* ================= CARD ================= */
@@ -91,14 +92,17 @@ h4 { font-size: 1.2rem; }
     padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; /* evita espaço excessivo entre conteúdo e base legal */
     color: #170da0;
     box-sizing: border-box;
+    min-width: 0; /* previne quebra do grid */
 }
 
 /* ================= IMAGEM DO CARD ================= */
 .cards-area .card img {
     width: 100%;
-    height: auto;
+    max-height: 180px; /* limita altura da imagem */
+    object-fit: cover;  /* mantém proporção sem distorcer */
     margin-bottom: 12px;
     border-radius: 8px;
 }
@@ -128,10 +132,15 @@ h4 { font-size: 1.2rem; }
     font-size: 0.92rem;
 }
 
+/* Remove espaço extra no último parágrafo */
+.cards-area .card .card-conteudo p:last-child {
+    margin-bottom: 0;
+}
+
 /* ================= BASE LEGAL ================= */
 .cards-area .card .lei,
 .cards-area .card .protecao {
-    margin-top: auto; /* força a base legal ficar no final */
+    margin-top: 8px; /* espaço pequeno fixo */
     background: #ffffff;
     border-left: 4px solid #170da0;
     padding: 12px;
@@ -142,7 +151,24 @@ h4 { font-size: 1.2rem; }
 /* ================= BOTÃO DE CONTATO ================= */
 .contato {
     text-align: center;
-    margin: 80px 0;
+    width: 70%;        /* mesma largura dos cards */
+    margin: 40px auto; /* centraliza horizontalmente e dá margem vertical */
+}
+
+.btn,
+button {
+    background: #170da0;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover,
+button:hover {
+    background-color: #0e0870;
 }
 
 /* ================= RESPONSIVO ================= */
@@ -156,40 +182,15 @@ h4 { font-size: 1.2rem; }
 @media (max-width: 900px) {
     .cards-area {
         grid-template-columns: repeat(2, 1fr);
+        width: 90%;
     }
 }
 
 @media (max-width: 600px) {
     .cards-area {
         grid-template-columns: 1fr;
+        width: 90%;
     }
-}
-/* ================= AJUSTES PONTUAIS – CARDS E CONTATO ================= */
-
-/* 1. Distribuição correta dos cards na linha única dentro de 70% */
-.cards-area {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
-    width: 70%;           /* limitar a 70% da página */
-    margin: 0 auto 40px;  /* centraliza horizontalmente e dá margem inferior */
-    justify-content: space-between; /* distribui uniformemente os cards */
-}
-
-/* 2. Reduzir espaço entre o conteúdo e a base legal do card */
-.cards-area .card .card-conteudo {
-    padding-bottom: 0; /* remove padding interno inferior */
-}
-
-.cards-area .card .card-conteudo p:last-child {
-    margin-bottom: 0;  /* remove margem do último parágrafo */
-}
-
-/* 3. Centralizar botão de Contato Institucional dentro de 70% */
-.contato {
-    text-align: center;
-    width: 70%;        /* mesma largura dos cards */
-    margin: 40px auto; /* centraliza horizontalmente e dá margem vertical */
 }
 
 
