@@ -204,7 +204,7 @@ button:hover {
 
 /* Imagem 1 — Abertura do site */
 .img-abertura {
-    max-width: 100px;   /* ajuste a largura máxima */
+    max-width: 75px;   /* ajuste a largura máxima */
     height: auto;       /* mantém proporção */
     display: block;
     margin: 0 auto;     /* centraliza horizontalmente */
@@ -212,7 +212,7 @@ button:hover {
 
 /* Imagem 2 — Foto da advogada */
 .img-advogada {
-    max-width: 70px;
+    max-width: 55px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -233,6 +233,7 @@ button:hover {
     display: block;
     margin: 0 auto;
 }
+
 
 
 
