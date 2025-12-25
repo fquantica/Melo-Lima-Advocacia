@@ -396,7 +396,8 @@ button {
 .card {
   width: var(--largura-card);
 }
---largura-card: 400px;
+--largura-card: 200px;
+
 
 
 
