@@ -452,16 +452,10 @@ button {
     justify-content: center;
 }
 
-/* === CORREÇÃO FORÇADA: TEXTO SOBE AO TOPO === */
-main > section:first-child {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
+/* === TESTE VISUAL DE ESPAÇO FANTASMA === */
+main * {
+    outline: 1px solid red;
 }
-
-
-
-
-
 
 
 
