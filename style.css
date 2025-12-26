@@ -451,6 +451,11 @@ button {
     gap: 20px;
     justify-content: center;
 }
+/* === CORREÇÃO DEFINITIVA: TEXTO SOBE E BOTÃO REAPARECE === */
+main > section:first-child > *:first-child {
+    margin-top: 0;
+}
+
 
 
 
