@@ -289,11 +289,13 @@ button {
 
 /* Imagem de abertura */
 .img-abertura {
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+    margin: 20px auto 0; /* controle de margem superior*/
+
 }
 
 /* Imagem da advogada (acordos judiciais) */
@@ -468,6 +470,7 @@ main > section:first-child {
 .cards-area a:hover {
     text-decoration: underline;
 }
+
 
 
 
