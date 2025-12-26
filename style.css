@@ -459,6 +459,16 @@ main > section:first-child > *:first-child {
 main > section:first-child {
     padding-top: 0;
 }
+/* === LINKS CLICÁVEIS DOS CARDS – COR PADRÃO DO SITE === */
+.cards-area a,
+.cards-area a:visited {
+    color: #170da0;
+    text-decoration: none;
+}
+.cards-area a:hover {
+    text-decoration: underline;
+}
+
 
 
 
